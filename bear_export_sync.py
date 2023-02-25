@@ -56,7 +56,7 @@ export_image_repository = True  # Export all notes as md but link images to
                                  # a common repository exported to: `assets_path` 
                                  # Only used if `export_as_textbundles = False`
 
-my_sync_service = 'Dropbox'  # Change 'Dropbox' to 'Box', 'Onedrive',
+my_sync_service = 'Notes'  # Change 'Dropbox' to 'Box', 'Onedrive',
     # or whatever folder of sync service you need.
 
 # NOTE! Your user 'HOME' path and '/BearNotes' is added below!
@@ -153,6 +153,8 @@ def export_markdown():
         c = conn.execute(query)
     note_count = 0
     for row in c:
+        if row['ZTEXT'] == None:
+            continue
         title = row['ZTITLE']
         md_text = row['ZTEXT'].rstrip()
         creation_date = row['ZCREATIONDATE']
