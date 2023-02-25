@@ -1,6 +1,7 @@
 ## Markdown export and sync of Bear notes
 
 
+
 ***bear_export_sync.py***   
 *Version 1.3.11, 2018-02-11 at 07:43 EST*
 
