@@ -56,7 +56,7 @@ export_image_repository = True  # Export all notes as md but link images to
                                  # a common repository exported to: `assets_path` 
                                  # Only used if `export_as_textbundles = False`
 
-my_sync_service = 'Notes'  # Change 'Dropbox' to 'Box', 'Onedrive',
+my_sync_service = 'Documents/bear-notes'  # Change 'Dropbox' to 'Box', 'Onedrive',
     # or whatever folder of sync service you need.
 
 # NOTE! Your user 'HOME' path and '/BearNotes' is added below!
