@@ -124,6 +124,7 @@ def main():
             copy_bear_images()
         # notify('Export completed')
         write_log(str(note_count) + ' notes exported to: ' + export_path)
+        print(str(note_count) + ' notes exported to: ' + export_path)
     else:
         print('*** No notes needed exports')
 
